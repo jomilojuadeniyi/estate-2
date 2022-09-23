@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="  https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@4.7/css/fontawesome.min.css ">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css ">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css ">
+    <link rel="stylesheet " href="../css/estate.css ">
+    <link rel="preconnect " href="https://fonts.googleapis.com ">
+    <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(../IMAGES/soap-bubbles-7111104__340.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav img {
+            width: 150px;
+        }
+        
+        .nav-links {
+            flex: 1px;
+            text-align: right;
+        }
+        
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+        }
+        
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        
+        .text-box {
+            text-align: center;
+            justify-content: center;
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+        
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 14px;
+            color: white;
+        }
+        
+        #text-box {
+            text-align: center;
+            justify-content: center;
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: translate(-50%, -50%);
+        }
+        
+        .nav-links ul li::after :hover {
+            width: 100%;
+        }
+        
+        .text-box h1 {
+            font-size: 62px;
+        }
+        
+        .text-box {
+            margin: 10px 0 40px;
+            font-size: 14px;
+            color: #fff;
+        }
+        
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid#fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .hero-btn:hover {
+            border: 1px solid red;
+            background: red;
+            transition: 1s;
+        }
+        
+        nav.fa {
+            display: none;
+        }
+        
+        nav.fa {
+            display: none;
+        }
+        
+        @media (max-width: 700px) {
+            .text-box h1 {
+                font-size: 20px;
+            }
+            .nav-links ul li {
+                display: block;
+            }
+            .nav-links {
+                height: 100vh;
+                position: absolute;
+                background: gold;
+                width: 200%;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+                text-align: left;
+            }
+            nav.fa {
+                display: block;
+                color: white;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+        
+        .course {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            color: silver;
+            padding: 10px;
+        }
+        
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .course-col {
+            flex-basis: 31%;
+            background: #fff3f3;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+        
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        
+        .course-col:hover {
+            box-shadow: 0 0 20px 0px black;
+        }
+        
+        nav.fa {
+            display: none;
+        }
+        
+        @media (max-width:700px) {
+            .nav-links {
+                position: absolute;
+                background: #f44336;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .campus {
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 50px;
+            }
+            nav.fa {
+                display: none;
+            }
+            nav.fa {
+                display: none;
+            }
+            .campus-col {
+                flex-basis: 32%;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            .campus-col img {
+                word-spacing: space;
+                width: 100%;
+            }
+            .layer {
+                transition: 0.5s;
+                background: transparent;
+                left: 0;
+                top: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .layer:hover {
+                background: rgb(226, 0, 0, 0.7);
+            }
+            .layer:hover {
+                bottom: 49%;
+                opacity: 1;
+            }
+            .facilities {
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 100px;
+            }
+            .layer h3 {
+                width: 100%;
+                font-weight: 500;
+                color: #fff;
+                font-size: 26px;
+                bottom: 0;
+                left: 50%;
+                transform: translatex(-50%);
+                position: absolute;
+                transition: 0.5s;
+            }
+            .layer:hover h3 {
+                bottom: 49%;
+                opacity: 1;
+            }
+            .nav-links {
+                position: absolute;
+                background: #f44336;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+            }
+        }
+        
+        .nav-links {
+            position: absolute;
+            background: #f44336;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: 0;
+            text-align: left;
+            z-index: 2;
+        }
+        
+        nav.fa {
+            display: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;0,800;1,200;1,300;1,700&display=swap " rel="stylesheet ">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="estate.html "><img src="../IMAGES/soap logo 1.png " alt=" "></a>
+
+            <!-- <div class="nav-links "> -->
+            <i class="fa fa-times"></i>
+            <ul>
+
+                <li><a href=" ">HOME</a> </li>
+                <li><a href=" ">ABOUT</a> </li>
+
+                <li><a href=" ">COURSE</a> </li>
+                <li><a href=" ">BLOG</a> </li>
+                <li><a href=" ">CONTACT</a> </li>
+
+
+            </ul>
+
+            </div>
+            <!-- <i class="fa fa-bars"></i> -->
+
+
+        </nav>
+
+
+        <div class="text-box ">
+            <h1>THE word Best Soap making company</h1>
+            <p>B&K liquid Soap</p>
+            <a href=" " class="hero-btn ">visit us to know more</a>
+        </div>
+
+
+
+    </section>
+    <section class="course ">
+        <h1>Courses</h1>
+        <p>Lorem, ipsum.</p>
+        <div class="row ">
+            <div class="course-col ">
+                <h3>intermidieate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis ea suscipit vitae eius aperiam magnam debitis, repellat esse nostrum maxime doloremque recusandae distinctio minima cum expedita eaque quo voluptas!</p>
+            </div>
+            <div class="course-col ">
+                <h3>degree
+
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis ea suscipit vitae eius aperiam magnam debitis, repellat esse nostrum maxime doloremque recusandae distinctio minima cum expedita eaque quo voluptas!</p>
+            </div>
+            <div class="course-col ">
+                <h3>post graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis ea suscipit vitae eius aperiam magnam debitis, repellat esse nostrum maxime doloremque recusandae distinctio minima cum expedita eaque quo voluptas!</p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>akinte street abawole</p>
+        <div class="row ">
+            <div class="campus-col ">
+                <!-- <img src="../IMAGES/london.jpg " alt=" ">
+                <div class="layer ">
+                    <h3>LONDON</h3> -->
+
+            </div>
+            <!-- <div class="campus-col ">
+                    <img src="../IMAGES/new.jpg " alt=" ">
+                    <div class="layer ">
+                        <h3>newyork</h3>
+
+                    </div> -->
+            <!-- <div class="campus-col ">
+                <img src="../IMAGES/wash.jpg " alt=" ">
+                <div class="layer ">
+                    <h3>whashighton</h3> -->
+
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="facilities ">
+        <h1>our facilities</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row ">
+            <div class="facilities ">
+                <img src="../IMAGES/blue background.jpg " alt=" ">
+                <h3>zobo</h3>
+
+            </div>
+        </div>
+    </section>
+</body>
+<input class="author" type="text" value="" onclick="this.value='';" name="author" id="author" size="22" tabindex="1" /><label for="author" get "></label><small>(Required)</small></label>
+
+</html>c
+
+</html>
